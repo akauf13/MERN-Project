@@ -6,12 +6,12 @@
   margin: 1rem;
   border-radius: 1rem;
   background-color: #43b1ed;
-  color: rgba(red, green, blue, 1);
+  /* color: rgba(red, green, blue, 1); */
 }
 
 img {
-  height: 500px;
-  width: 350px;
+  height: 400px;
+  width: 300px;
   border-radius: 60px;
   padding-bottom: 25px;
   /* border: 1px solid white; */
