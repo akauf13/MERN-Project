@@ -1,0 +1,44 @@
+.card {
+  border: 2px solid white;
+  height: 600px;
+  width: 400px;
+  /* margin: auto; */
+  margin: 1rem;
+  border-radius: 1rem;
+  background-color: #43b1ed;
+  color: rgba(red, green, blue, 1);
+}
+
+img {
+  height: 500px;
+  width: 350px;
+  border-radius: 60px;
+  padding-bottom: 25px;
+  /* border: 1px solid white; */
+}
+
+p {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 600px) {
+
+  .card {
+    border: 2px solid black;
+    max-height: 550px;
+    max-width: 300px;
+    margin: auto;
+    border-radius: 45px;
+  }
+
+  img {
+    height: 300px;
+    width: 200px;
+    border-radius: 60px;
+    padding-bottom: 10px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}

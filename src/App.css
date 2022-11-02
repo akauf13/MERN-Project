@@ -1,0 +1,49 @@
+.App {
+ 
+  /* border: 2px solid black; */
+
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 2px solid red;
+}
+
+.holder {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* border: 2px solid black; */
+}
+
+.card {
+  border: 2px solid black;
+  /* background-image: url("https://lbmslab.org/lab/wp-content/uploads/2017/02/822be1519b67a0f657dbfeae47eba30b-1.png");
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+
+
+.container {
+  display: flex;
+  border: 2px solid red;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  max-width: 25rem;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.btn {
+  display: flex;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  max-width: 6rem;
+  margin-left: 40%;
+  margin-right: 30%;
+}
