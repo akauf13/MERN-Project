@@ -21,13 +21,13 @@ function Pokemon() {
 
     let filteredPokemon = response.data.map((pokemon) => {
       let foundImg = images.find((img) => {
-        return img.name.name === pokemon.name
-      })
+        return img.name.name === pokemon.name;
+      });
       if (foundImg) {
-        pokemon.image = foundImg.artwork.image
-        return pokemon
+        pokemon.image = foundImg.artwork.image;
+        return pokemon;
       }
-    })
+    });
 
     setPokemon(filteredPokemon);
   };
@@ -40,24 +40,27 @@ function Pokemon() {
 
   return (
     <div className="App">
-      <h1>Pokemon</h1>
-     
+      <div className="title">
+        <h1>Pokemon Gen 1</h1>
+      </div>
+
       <div className="main">
-      <div className="holder">
+        <div className="holder">
           {pokemon.map((poke) => (
-            
-          <div className="card" onClick={() => setShow(true)} key={poke.id}>
-              <h2>{poke.name}</h2>
-              <img src={poke.image} alt="pokemon" onClick={() => {setModalData(poke)}} />
-            {/* <ul>
-            <li>{poke.pokedexNumber}</li>
-            <li>{poke.habitat}</li>
-            <li>{poke.evolves_from}</li>
-            <li>Legendary? {poke.is_legendary ? "Yes" : "No"}</li>
-            <li>Mythical? {poke.is_mythical ? "Yes" : "No"}</li>
-            </ul> */}
-          </div>
-        ))}
+            <div className="card" onClick={() => setShow(true)} key={poke.id}>
+              <div className="card-body">
+                <h2>{poke.name}</h2>
+                <img
+                  className="image"
+                  src={poke.image}
+                  alt="pokemon"
+                  onClick={() => {
+                    setModalData(poke);
+                  }}
+                />
+              </div>
+            </div>
+          ))}
         </div>
 
         <Modal
@@ -66,9 +69,7 @@ function Pokemon() {
           onClose={() => setShow(false)}
           modalData={modalData}
         />
-
       </div>
-
     </div>
   );
 }

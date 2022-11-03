@@ -10,6 +10,7 @@ function Modal({ modalData, show, onClose, setShow }) {
 
   return (
     <div className="modal" onClick={onClose}>
+      <div className="full">
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <div className="modal-header">
           <h1>{modalData.name}</h1>
@@ -24,6 +25,7 @@ function Modal({ modalData, show, onClose, setShow }) {
             Go Back
           </button>
         </div>
+      </div>
       </div>
     </div>
   );

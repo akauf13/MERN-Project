@@ -8,12 +8,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
+  border: 2px solid green;
 }
 
+
 .modal-content {
-  width: 500px;
-  background-color: #fff;
+  width: 350px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4rem;
 }
 
 .modal-header {
@@ -40,13 +46,16 @@
 }
 
 .button {
+  display: flex;
+  flex-direction: column;
   border-radius: 5px;
   padding: 15px;
   justify-content: center;
 }
 
 .button:hover {
-  background-color: darkblue;
+  background-color: #43b1ed;
   color: #eee;
   font-weight: bold;
+  cursor: pointer;
 }

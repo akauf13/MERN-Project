@@ -4,21 +4,40 @@
   width: 400px;
   /* margin: auto; */
   margin: 1rem;
-  border-radius: 1rem;
+  border-radius: 3rem;
   background-color: #43b1ed;
   /* color: rgba(red, green, blue, 1); */
 }
 
-img {
-  height: 400px;
-  width: 300px;
-  border-radius: 60px;
+.card-body {
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+/* img {
   padding-bottom: 25px;
-  /* border: 1px solid white; */
+  border: 1px solid white;
+} */
+
+.image {
+  height: 100%;
+  width: 100%;
 }
 
 p {
   font-size: 18px;
+}
+
+.card:hover {
+  cursor: pointer;
+  border-radius: 4rem;
+  filter: brightness(1.15);
+  transform: scale(1.06);
 }
 
 @media screen and (max-width: 600px) {
